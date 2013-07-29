@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ABOViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="MD5 This shit!" translatesAutoresizingMaskIntoConstraints="NO" id="AD0-SR-VkU">
+                                <color key="backgroundColor" red="0.69803923369999998" green="0.77647066119999997" blue="0.43137258290000002" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="E5m-y1-Mcl"/>
+                                    <constraint firstAttribute="width" constant="240" id="ph5-uX-pcV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This shit be md5'd" translatesAutoresizingMaskIntoConstraints="NO" id="kpW-eK-Xkj">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cGt-o3-qE7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MD5 Some Shit!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYi-3T-zfr">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZP-lv-eYn">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="GO!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goMD5:" destination="2" eventType="touchUpInside" id="HnZ-br-ZuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDM-sJ-B6j">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetMD5:" destination="2" eventType="touchUpInside" id="3m3-BA-NVs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AD0-SR-VkU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="75" id="0Ko-kT-oeX"/>
+                            <constraint firstAttribute="bottom" secondItem="kpW-eK-Xkj" secondAttribute="bottom" constant="119" id="Hvp-xm-838"/>
+                            <constraint firstItem="kpW-eK-Xkj" firstAttribute="leading" secondItem="AD0-SR-VkU" secondAttribute="leading" type="default" id="USu-xf-aRU"/>
+                            <constraint firstItem="rZP-lv-eYn" firstAttribute="top" secondItem="3" secondAttribute="top" constant="239" id="Ui7-Ah-9z5"/>
+                            <constraint firstItem="kpW-eK-Xkj" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Wwd-aL-DAO"/>
+                            <constraint firstItem="rZP-lv-eYn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="97" id="aiD-gT-Dco"/>
+                            <constraint firstItem="NYi-3T-zfr" firstAttribute="top" secondItem="3" secondAttribute="top" constant="25" id="jim-ye-me5"/>
+                            <constraint firstItem="gDM-sJ-B6j" firstAttribute="leading" secondItem="rZP-lv-eYn" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="nZr-mI-wa0"/>
+                            <constraint firstItem="AD0-SR-VkU" firstAttribute="trailing" secondItem="kpW-eK-Xkj" secondAttribute="trailing" type="default" id="rD9-JS-LoF"/>
+                            <constraint firstItem="NYi-3T-zfr" firstAttribute="centerX" secondItem="AD0-SR-VkU" secondAttribute="centerX" type="default" id="wjY-qL-O1f"/>
+                            <constraint firstItem="gDM-sJ-B6j" firstAttribute="baseline" secondItem="rZP-lv-eYn" secondAttribute="baseline" type="default" id="xqD-mp-Lzi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="md5Result" destination="kpW-eK-Xkj" id="Kw9-Bm-Kwq"/>
+                        <outlet property="md5Source" destination="AD0-SR-VkU" id="oG2-Lq-Fx1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
